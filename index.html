@@ -204,7 +204,10 @@
             letter-spacing: .38em;
             text-transform: uppercase;
             font-style: italic;
-            color: rgba(180, 185, 200, 0.58);
+            background: linear-gradient(180deg, #ffffff 0%, #c8c8c8 20%, #888888 42%, #6E6E78 58%, #9A9AA5 72%, #e8e8e8 84%, #3A3A42 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             opacity: 0;
             transform: translateY(10px);
             animation: rU 1.8s .4s cubic-bezier(.22, 1, .36, 1) forwards;
@@ -429,7 +432,9 @@
         for (let r = 0; r < ROWS; r++) {
             for (let c = 0; c < COLS; c++) {
                 const el = document.createElement('div');
-                el.className = 'dot'; gridEl.appendChild(el);
+                el.className = 'dot'; 
+                if (r === 0 && c === 0) el.style.background = '#ff0000';
+                gridEl.appendChild(el);
                 const nd = Math.sqrt((r - cR) ** 2 + (c - cC) ** 2) / maxD;
                 const sc = rndS(), cv = rndC(sc.x, sc.y), ns = rndS();
                 dots.push({
