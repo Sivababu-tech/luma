@@ -6,13 +6,13 @@
     <title>LUMA®</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
         html,body{
             width:100vw;height:100dvh;overflow:hidden;
-            font-family:'Inter Tight','Helvetica Neue',Arial,sans-serif;
+            font-family:'Bodoni Moda','Times New Roman',Georgia,serif;
             background:#3A3E4A;
             -webkit-font-smoothing:antialiased;
             -moz-osx-font-smoothing:grayscale;
@@ -76,13 +76,14 @@
         }
 
         .top-text{
-            font-size:clamp(.55rem,.95vw,.72rem);font-weight:300;
-            letter-spacing:.32em;text-transform:uppercase;
-            color:rgba(180,185,200,0.6);
+            font-size:clamp(.5rem,.85vw,.68rem);font-weight:300;
+            letter-spacing:.38em;text-transform:uppercase;
+            font-style:italic;
+            color:rgba(180,185,200,0.58);
             opacity:0;transform:translateY(10px);
             animation:rU 1.8s .4s cubic-bezier(.22,1,.36,1) forwards;
             margin-bottom:clamp(2vh,4.5vh,5vh);
-            text-align:center;line-height:1.7;
+            text-align:center;line-height:1.9;
         }
         @keyframes rU{to{opacity:1;transform:translateY(0)}}
 
@@ -100,19 +101,20 @@
 
         /* ─── LUMA with book-cover gradient ─── */
         .logo{
-            font-size:clamp(1.7rem,5vw,3.4rem);font-weight:100;
-            letter-spacing:.4em;line-height:1;
+            font-size:clamp(2rem,6vw,4.2rem);font-weight:800;
+            letter-spacing:.35em;line-height:1;
             opacity:0;transform:translateY(14px);
             animation:rU 2.2s 2.8s cubic-bezier(.22,1,.36,1) forwards;
-            text-indent:.4em;
-                background: linear-gradient(180deg, #ffffff 0%, #888888 35%, #6E6E78 55%, #8A8A95 70%, #e1e1e1 82%, #3A3A42 100%);
+            text-indent:.35em;
+            background: linear-gradient(180deg, #ffffff 0%, #c8c8c8 20%, #888888 42%, #6E6E78 58%, #9A9AA5 72%, #e8e8e8 84%, #3A3A42 100%);
             -webkit-background-clip:text;
             -webkit-text-fill-color:transparent;
             background-clip:text;
         }
         .logo .reg{
-            font-size:.28em;vertical-align:super;
-            letter-spacing:0;font-weight:200;margin-left:-.06em;
+            font-size:.22em;vertical-align:super;
+            letter-spacing:0;font-weight:400;margin-left:-.04em;
+            font-style:normal;
         }
 
         .divider{
@@ -122,20 +124,22 @@
             animation:rU 1.5s 3.1s cubic-bezier(.22,1,.36,1) forwards;
         }
         .coming-soon{
-            font-size:clamp(.48rem,.75vw,.62rem);font-weight:300;
-            letter-spacing:.5em;text-transform:uppercase;
-            color:#fff;
+            font-size:clamp(.46rem,.72vw,.6rem);font-weight:300;
+            letter-spacing:.55em;text-transform:uppercase;
+            font-style:italic;
+            color:rgba(255,255,255,0.85);
             opacity:0;transform:translateY(6px);
             animation:rU 1.5s 3.2s cubic-bezier(.22,1,.36,1) forwards;
-            text-indent:.5em;
+            text-indent:.55em;
         }
         .release-text{
-            font-size:clamp(.42rem,.6vw,.5rem);font-weight:200;
-            letter-spacing:.4em;
-            color:#fff;
+            font-size:clamp(.4rem,.58vw,.5rem);font-weight:300;
+            letter-spacing:.45em;
+            font-style:italic;
+            color:rgba(255,255,255,0.6);
             opacity:0;transform:translateY(4px);
             animation:rU 1.5s 3.4s cubic-bezier(.22,1,.36,1) forwards;
-            text-indent:.4em;
+            text-indent:.45em;
         }
 
         :root{--dot-size:6px;--dot-gap:15px}
